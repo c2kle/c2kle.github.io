@@ -63,6 +63,8 @@ nav ul li a:link {
 nav ul li a:visited {
     color: whitesmoke;
 }
+
+
 footer{
     font-size: 35px;
     color: #99cc33;
@@ -78,7 +80,9 @@ footer div i{
 }
 
 
-@media (max-width:768px) {
+
+
+@media (max-width:1210px) {
 
 
 
@@ -97,7 +101,7 @@ footer div i{
     }
 }
 
-@media (max-width:650px) {
+@media (max-width:702px) {
     .container {
         display: grid;
         grid-template-columns: 100vw;
@@ -108,8 +112,29 @@ footer div i{
         background-size: cover;
     }
 
+
+nav ul li{
+
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+}
+
 }
 @media (max-width:375px) {
+
+    nav {
+        justify-content: center;
+    }
+    nav ul{
+        margin: 0px;
+    }
+nav ul li{
+
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+}
 
     .container {
         display: grid;
