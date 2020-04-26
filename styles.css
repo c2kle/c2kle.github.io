@@ -120,11 +120,6 @@ nav ul li{
     font-size: 16px;
 }
 
-@media(max-height:414px) {
-    .background{
-        background-image: url(tabletFullLogo.png);
-    }
-}
 
 }
 @media (max-width:375px) {
