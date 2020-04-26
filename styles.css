@@ -7,7 +7,7 @@
 .container {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 1080px;
+    grid-template-rows: minmax(1080px,100vh);
 }
 
 .background {
@@ -15,9 +15,10 @@
     grid-column: 1/2;
     z-index: 0;
     background-image: url(desktopFullLogoShort.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: scroll;
     background-size: cover;
+ 
 
 }
 
@@ -79,6 +80,9 @@ footer div i{
 
 
 @media (max-width:768px) {
+
+
+
     .background{
         background-image: url(tabletFullLogo.png);
     }
