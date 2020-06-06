@@ -390,7 +390,7 @@ blockquote .svg-inline--fa {
 /*============= CONTACT SECTION =============*/
 
 .footer {
-  background: url('../img/fixed/backhand.JPG') no-repeat;
+  background: url('../img/fixed/backhand.jpg') no-repeat;
   /*background-color: #40474e;*/
   background-position: left center;
   background-size: cover;
@@ -522,7 +522,7 @@ a.top-scroll:hover {
     background-image: url('../img/portfolio/kids.jpg');
   }
   .footer {
-    background: url('../img/fixed/backhand.JPG') no-repeat;
+    background: url('../img/fixed/backhand.jpg') no-repeat;
     background-position: center;
     background-size: cover;
   }
