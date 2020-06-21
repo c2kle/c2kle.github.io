@@ -17,11 +17,11 @@ $fromEmail = $_POST['email'];
 $fromName = $_POST['name'];
 
 // an email address & name that will receive the email with the output of the form
-$sendToEmail = 'name@mydomain.com';
-$sendToName = 'Name';
+$sendToEmail = 'coachkabiru@triangletennisacademy.com';
+$sendToName = 'TTA';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Message Triangle Tennis Academy website contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -44,7 +44,7 @@ try
 {
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-    $emailTextHtml .= "<h3>New message from the w3newbie Theme:</h3><hr>";
+    $emailTextHtml .= "<h3>New message from TTA:</h3><hr>";
     $emailTextHtml .= "<table>";
 
     foreach ($_POST as $key => $value) {
@@ -54,7 +54,7 @@ try
         }
     }
     $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a great day!<br><br>Sincerely,<br><br>w3newbie Theme</p>";
+    $emailTextHtml .= "<p><br><br><br><br></p>"; //Have a great day! Sincerely, insert theme
     
     $mail = new PHPMailer;
 
@@ -68,7 +68,7 @@ try
 
     $mail->Body = $emailTextHtml;
     $mail->isHTML(true);
-    //$mail->msgHTML($emailTextHtml); // this will also create a plain-text version of the HTML email, very handy
+    $mail->msgHTML($emailTextHtml); // this will also create a plain-text version of the HTML email, very handy
     
     
     if(!$mail->send()) {
